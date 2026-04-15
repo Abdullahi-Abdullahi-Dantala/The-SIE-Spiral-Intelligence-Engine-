@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+env/
+
+# Training artifacts
+*.log
+runs/
+wandb/
+
+# Data — never commit datasets
+data/
+cifar-10-python*
+*.tar.gz
+*.tar
+
+# OS files
+.DS_Store
+Thumbs.db
