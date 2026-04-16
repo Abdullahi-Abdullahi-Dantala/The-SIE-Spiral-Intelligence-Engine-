@@ -105,7 +105,7 @@ def load_model():
             "Please upload sie_best.pt to this Space."
         )
 
-    state = torch.load(weights_path, map_location="cpu")
+    state = torch.load(weights_path, map_location="cpu", weights_only=False)
     model.load_state_dict(state)
     model.eval()
     return model
